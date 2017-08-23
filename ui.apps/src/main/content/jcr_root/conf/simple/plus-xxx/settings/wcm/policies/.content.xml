@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <wcm jcr:primaryType="nt:unstructured">
+        <foundation jcr:primaryType="nt:unstructured">
+            <components jcr:primaryType="nt:unstructured">
+                <responsivegrid jcr:primaryType="nt:unstructured">
+                    <simple-structure
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Simple Structure"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/libs/wcm/foundation/components/responsivegrid,group:Simple.Structure]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </simple-structure>
+                    <simple-content
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Simple Content"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/libs/wcm/foundation/components/responsivegrid,group:Simple.Content]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </simple-content>
+                </responsivegrid>
+            </components>
+        </foundation>
+    </wcm>
+</jcr:root>
