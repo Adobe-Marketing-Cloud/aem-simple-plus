@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <red/>
+    <green/>
+    <blue/>
+    <jcr:content
+        cq:lastModified="{Date}2017-08-15T15:07:04.861-04:00"
+        cq:lastModifiedBy="admin"
+        cq:allowedTemplates="[/conf/simple/plus-pjax/settings/wcm/templates/.*]"
+        cq:template="/conf/simple/plus-pjax/settings/wcm/templates/content-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="PJAX"
+        sling:resourceType="simple/components/structure/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <list
+                    jcr:lastModified="{Date}2017-08-15T14:44:46.648-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="simple/components/core/v1/list"
+                    childDepth="1"
+                    linkItems="true"
+                    listFrom="static"
+                    pages="[/content/simple/plus/pjax,/content/simple/plus/pjax/red,/content/simple/plus/pjax/green,/content/simple/plus/pjax/blue]"
+                    parentPage="/content/simple/plus/pjax"
+                    showDescription="false"
+                    showModificationDate="false"
+                    sortOrder="asc"
+                    tagsMatch="any">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            width="2"/>
+                    </cq:responsive>
+                </list>
+                <text_1131016718
+                    jcr:created="{Date}2017-08-15T14:19:48.583-04:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-08-15T15:07:04.858-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="simple/components/core/v1/text"
+                    text="&lt;p>&lt;b>PJAX implementation&lt;/b>&lt;/p>&#xa;&lt;p>&lt;i>This implementation uses the &lt;a href=&quot;https://github.com/MoOx/pjax&quot; target=&quot;_blank&quot;>MoOX PJAX implementation&lt;/a>..&lt;/i>&lt;/p>&#xa;&lt;p>This implementation demonstrates the use of PJAX (Push-state + AJAX) in the context of AEM. &amp;nbsp;PJAX can be used to decreased the perceived and experienced page load time, but requesting subsequent pages via AJAX and injecting targeted page contents into the current page&amp;#39;s DOM.&amp;nbsp;&lt;/p>&#xa;&lt;p>This demonstration swaps out a wrapping div that resides directly inside the &amp;lt;body&amp;gt; tag, however it does exclude the footer JavaScript includes.&amp;nbsp;&lt;/p>&#xa;&lt;p>&lt;b>How to use this implementation&lt;/b>&lt;/p>&#xa;&lt;ol style=&quot;list-style-position: inside;&quot;>&#xa;&lt;li>Optionally, from the action bar, select: View as Published&lt;/li>&#xa;&lt;li>Click on the links to the color pages on the left&lt;/li>&#xa;&lt;li>Notice the page does not have the usual page-load flicker.&lt;/li>&#xa;&lt;/ol>&#xa;&lt;p>&lt;b>Known issues&lt;/b>&lt;/p>&#xa;&lt;ul style=&quot;list-style-position: inside;&quot;>&#xa;&lt;li>When navigating the side via PJAX in Preview Mode, and then switching back to Edit mode, the authoring experience breaks (components are no long selectable) because a full page reloads are not occuring during navigation, so Page Editor authoring state becomes confused.&lt;ul>&#xa;&lt;li>&amp;nbsp;&lt;b>Work around:&lt;/b> Disable PJAX on Authoring, and only enable on AEM Publish.&lt;ul>&#xa;&lt;li>Refreshing the page will resolve any issues due to navigating the Page Editor via PJAX.&lt;/li>&#xa;&lt;li>Note, this example keeps it enabled on AEM Author to illutrate the integration.&lt;/li>&#xa;&lt;/ul>&#xa;&lt;/li>&#xa;&lt;/ul>&#xa;&lt;/li>&#xa;&lt;li>Ideally all shared JavaScript/CSS across the side is loaded outside the PJAX targeted areas to increase efficiencies. This does mean when new pages are PJAX&amp;#39;d into the page, the JavaScript will not re-execute; If JavaScript needs to re-bind to new content, then:&lt;ul>&#xa;&lt;li>Event binding should be delegated to elements that exist above the PJAX container&lt;/li>&#xa;&lt;li>Use the PJAX JavaScript APIs to manage the re-execution of JavaScript on injected HTML.&lt;/li>&#xa;&lt;/ul>&#xa;&lt;/li>&#xa;&lt;li>&lt;a href=&quot;https://github.com/MoOx/pjax/issues&quot; target=&quot;_blank&quot;>Visit the MoOX PJAX GitHub issues to review and log issues.&lt;/a>&lt;/li>&#xa;&lt;/ul>&#xa;"
+                    textIsRich="true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            width="10"/>
+                    </cq:responsive>
+                </text_1131016718>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

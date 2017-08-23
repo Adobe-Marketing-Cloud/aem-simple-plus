@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <simple jcr:primaryType="nt:unstructured">
+        <components jcr:primaryType="nt:unstructured">
+            <structure jcr:primaryType="nt:unstructured">
+                <page jcr:primaryType="nt:unstructured">
+                    <pjax-page-policy
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Simple Plus - PJAX"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        clientlibs="simple.plus.pjax.base">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </pjax-page-policy>
+                </page>
+            </structure>
+        </components>
+    </simple>
+    <wcm jcr:primaryType="nt:unstructured">
+        <foundation jcr:primaryType="nt:unstructured">
+            <components jcr:primaryType="nt:unstructured">
+                <responsivegrid jcr:primaryType="nt:unstructured">
+                    <policy_1502757773857
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Simple Plus - PJAX Content"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="group:Simple.Content">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1502757773857>
+                </responsivegrid>
+            </components>
+        </foundation>
+    </wcm>
+</jcr:root>

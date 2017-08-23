@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-08-15T14:42:28.774-04:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/simple/plus-pjax/settings/wcm/templates/content-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Red"
+        sling:resourceType="simple/components/structure/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <list
+                    jcr:lastModified="{Date}2017-08-15T14:44:46.648-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="simple/components/core/v1/list"
+                    childDepth="1"
+                    linkItems="true"
+                    listFrom="static"
+                    pages="[/content/simple/plus/pjax,/content/simple/plus/pjax/red,/content/simple/plus/pjax/green,/content/simple/plus/pjax/blue]"
+                    parentPage="/content/simple/plus/pjax"
+                    showDescription="false"
+                    showModificationDate="false"
+                    sortOrder="asc"
+                    tagsMatch="any">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            width="2"/>
+                    </cq:responsive>
+                </list>
+                <title
+                    jcr:created="{Date}2017-08-15T14:41:55.726-04:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-08-15T14:41:55.726-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="simple/components/core/v1/title">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            width="10"/>
+                    </cq:responsive>
+                </title>
+                <image
+                    jcr:created="{Date}2017-08-15T14:42:01.209-04:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-08-15T14:42:22.640-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="simple/components/core/v1/image"
+                    fileReference="/content/dam/simple/images/red.png">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            width="6"/>
+                    </cq:responsive>
+                </image>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>
