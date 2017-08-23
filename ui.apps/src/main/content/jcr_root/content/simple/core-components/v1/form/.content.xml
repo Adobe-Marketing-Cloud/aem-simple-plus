@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/simple/settings/wcm/templates/content-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Form Components (v1)"
+        sling:resourceType="simple/components/structure/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="simple/components/core/v1/form/container"
+                    action="/content/usergenerated/simple/core-components/v1/form/cq-gen1502136434477/"
+                    actionType="foundation/components/form/actions/store">
+                    <text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="simple/components/core/v1/form/text"/>
+                    <hidden
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="simple/components/core/v1/form/hidden"
+                        id="hidden-field"
+                        name="hidden"
+                        value="im-hidden"/>
+                    <options-checkboxes
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Options as Checkboxes"
+                        sling:resourceType="simple/components/core/v1/form/options"
+                        name="checkboxes"
+                        source="local"
+                        type="checkbox">
+                        <items jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                selected="false"
+                                text="Option 1"
+                                value="1"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                selected="false"
+                                text="Option 2"
+                                value="2"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                selected="false"
+                                text="Option 3"
+                                value="3"/>
+                        </items>
+                    </options-checkboxes>
+                    <options-radio-buttons
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Options as Radio buttons"
+                        sling:resourceType="simple/components/core/v1/form/options"
+                        name="radio-buttons"
+                        source="local"
+                        type="radio">
+                        <items jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                text="Option 1"
+                                value="1"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                text="Option 2"
+                                value="2"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                disabled="true"
+                                text="Option 3"
+                                value="3"/>
+                        </items>
+                    </options-radio-buttons>
+                    <options-drop-down
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Options as Drop-down"
+                        sling:resourceType="simple/components/core/v1/form/options"
+                        name="drop-down"
+                        source="local"
+                        type="drop-down">
+                        <items jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                selected="true"
+                                text="Option 1"
+                                value="1"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                text="Option 2"
+                                value="2"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                disabled="true"
+                                text="Option 3"
+                                value="3"/>
+                        </items>
+                    </options-drop-down>
+                    <options-multi-dropdown
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Options as Multi-select drop-down"
+                        sling:resourceType="simple/components/core/v1/form/options"
+                        name="multi-drop-down"
+                        source="local"
+                        type="multi-drop-down">
+                        <items jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                selected="false"
+                                text="Option 1"
+                                value="1"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                selected="false"
+                                text="Option 2"
+                                value="2"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                selected="false"
+                                text="Option 3"
+                                value="3"/>
+                        </items>
+                    </options-multi-dropdown>
+                    <button-regular
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Regular Button"
+                        sling:resourceType="simple/components/core/v1/form/button"
+                        name="button"
+                        type="button"
+                        value="regular-button"/>
+                    <button-submit
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Submit Button"
+                        sling:resourceType="simple/components/core/v1/form/button"
+                        name="submit"
+                        type="submit"
+                        value="submit-form"/>
+                </container>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

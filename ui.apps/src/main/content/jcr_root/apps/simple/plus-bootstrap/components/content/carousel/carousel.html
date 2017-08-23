@@ -1,0 +1,27 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Implementation of Bootstrap Carousel
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+    <div data-sly-use.carousel="com.adobe.aem.samples.simple.plus.bootstrap.models.Carousel"
+    	 data-sly-use.slideTemplate="slide.html"
+    	 id="${carousel.id}" class="carousel slide" 
+         data-ride="${properties.autoPlay == 'true' ? 'carousel' : ''}"
+         data-interval="${properties.playSpeed}">
+
+      <!-- Indicators -->
+      <ol class="carousel-indicators" data-sly-list="${carousel.items}">
+        <li data-target="#${carousel.id}" data-slide-to="${itemList.index}" class="${itemList.index == 0 ? 'active' : ''}"></li>
+      </ol>
+      
+      <div class="carousel-inner" role="listbox" data-sly-list.carouselItem="${carousel.items}">
+      	<div data-sly-call="${slideTemplate.slide @ carouselItem = carouselItem, index = carouselItemList.index}" class="item ${carouselItemList.index == 0 ? 'active' : ''}"></div>
+      </div>
+
+      <a class="left carousel-control" href="#${carousel.id}" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#${carousel.id}" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->

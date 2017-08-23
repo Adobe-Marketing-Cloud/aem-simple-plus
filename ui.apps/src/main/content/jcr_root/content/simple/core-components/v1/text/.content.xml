@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:template="/conf/simple/settings/wcm/templates/content-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Text Component (v1)"
+        sling:resourceType="simple/components/structure/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <text_947397480
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="simple/components/core/v1/text"
+                    text="&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis rhoncus diam, nec vulputate ex feugiat quis. Phasellus vitae diam eu sem pharetra dictum. Etiam eu massa tristique, aliquam ex eget, porta dolor. Donec tincidunt imperdiet diam, ac vestibulum nulla aliquam et. Pellentesque mollis in lorem faucibus suscipit. Integer commodo ex in tincidunt placerat. Phasellus eros lacus, consectetur non dictum ac, pretium sit amet sem.&lt;/p>&#xa;&lt;p>Mauris eu tempus mauris. In eros elit, rutrum non sodales et, feugiat quis purus. In pretium lectus et metus eleifend, in tempor arcu egestas. Aenean rhoncus egestas orci, in tristique lacus. Ut ultrices consequat eleifend. Sed a est libero. Integer condimentum posuere lorem, ac porta dui ultrices feugiat. Etiam et leo lacus. Donec porttitor ut magna non tristique. Nunc at tempor massa.&lt;/p>&#xa;&lt;p>Nullam purus dolor, ornare a enim sit amet, iaculis maximus mi. Nullam elementum lectus in ligula fringilla, vitae dapibus odio posuere. Duis et faucibus lorem, a pellentesque urna. Aliquam eu efficitur enim. Aliquam mauris nibh, ultricies ac viverra eget, ultrices ut turpis. Vestibulum fringilla, nibh vestibulum lobortis condimentum, ligula turpis placerat nisl, quis finibus sem enim eu orci. Integer sollicitudin, risus eu venenatis egestas, lorem tortor tristique neque, eget ultrices ex massa quis lectus. Donec quis sapien sapien. Nullam at tortor ac orci eleifend pulvinar. Maecenas dapibus, nulla nec cursus tincidunt, lectus leo laoreet dolor, eget ullamcorper leo eros non lorem. Etiam sollicitudin, lectus id ultricies molestie, quam ante bibendum felis, quis egestas nisi ante vel urna. Nam massa elit, iaculis vitae pharetra quis, ultricies sed dolor. Curabitur sed congue sapien, eget porttitor sapien. Pellentesque congue dui et scelerisque tempus.&lt;/p>&#xa;&lt;p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum porta nec felis a pellentesque. Cras ut dolor eu diam pretium maximus id vel nunc. Vivamus lacinia venenatis erat sit amet condimentum. Morbi ullamcorper orci vitae metus dignissim, ut vestibulum quam tempus. Maecenas auctor faucibus augue, sit amet sagittis augue tempus quis. Integer sodales eros non augue bibendum, molestie faucibus libero scelerisque. Nam velit urna, facilisis ac erat sit amet, convallis ullamcorper tellus. Sed quis laoreet ex. Suspendisse vitae enim non orci luctus tempus sit amet sed augue. Curabitur arcu risus, molestie imperdiet condimentum vitae, dapibus in sem.&lt;/p>&#xa;&lt;p>Maecenas at sollicitudin magna, a maximus mauris. Nulla lacus tellus, interdum a porttitor quis, facilisis id enim. In eu purus est. Suspendisse vel quam vel nisl pellentesque laoreet at ut arcu. Integer at varius ex. Aliquam elementum lacinia felis rhoncus bibendum. Suspendisse potenti.&lt;/p>&#xa;"
+                    textIsRich="true"/>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

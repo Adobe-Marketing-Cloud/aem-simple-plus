@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-08-23T14:05:52.506-04:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/simple/plus-bootstrap/settings/wcm/templates/content-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Grid Example"
+        sling:resourceType="simple/components/structure/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <text
+                    jcr:created="{Date}2017-08-23T14:02:29.844-04:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-08-23T14:05:52.505-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="simple/components/core/v1/text"
+                    text="&lt;p>&lt;b>How to Use&lt;/b>&lt;/p>&#xa;&lt;ol style=&quot;list-style-position: inside;&quot;>&#xa;&lt;li>In the top menu bar select the Device toggle to preview the page on various device widths. Notice how the Bootstrap grid changes.&amp;nbsp;&lt;/li>&#xa;&lt;li>Enter Layout mode and change the size of the Grid Component below. Notice that the Bootstrap grid is percent based and alignment changes only with device width change. Not when the outer container changes width.&amp;nbsp;&lt;/li>&#xa;&lt;/ol>&#xa;"
+                    textIsRich="true"/>
+                <grid_example
+                    jcr:created="{Date}2017-08-23T13:44:15.983-04:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-08-23T13:44:15.983-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="simple/plus-bootstrap/components/content/grid-example"/>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

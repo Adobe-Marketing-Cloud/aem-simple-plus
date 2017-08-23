@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:allowedTemplates="/conf/simple/plus-bootstrap/settings/wcm/templates/.*"
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2017-08-23T14:07:41.231-04:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/simple/plus-bootstrap/settings/wcm/templates/content-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Bootstrap"
+        sling:resourceType="simple/components/structure/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <list
+                    jcr:created="{Date}2017-08-23T13:50:47.810-04:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-08-23T13:51:24.558-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="simple/components/core/v1/list"
+                    childDepth="1"
+                    linkItems="true"
+                    listFrom="static"
+                    pages="[/content/simple/plus/bootstrap/grid-example,/content/simple/plus/bootstrap/carousel-example]"
+                    showDescription="false"
+                    showModificationDate="false"
+                    sortOrder="asc"
+                    tagsMatch="any">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            width="2"/>
+                    </cq:responsive>
+                </list>
+                <text_1776779756
+                    jcr:created="{Date}2017-08-23T13:50:13.569-04:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-08-23T14:07:38.846-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="simple/components/core/v1/text"
+                    text="&lt;p>&lt;b>Bootstrap implementation&lt;/b>&lt;/p>&#xa;&lt;p>&lt;i>This implementation uses the &lt;a href=&quot;https://getbootstrap.com/docs/3.3/&quot; target=&quot;_blank&quot;>Bootstrap responsive framework v 3.3.7&lt;/a>&lt;/i>&lt;/p>&#xa;&lt;p>Bootstrap is a very popular framework to build responsive websites. The intention of this implementation sample is to show how Bootstrap CSS and JS can be integrated with an AEM sites page. The &lt;a href=&quot;/content/simple/plus/bootstrap/grid-example.html&quot;>Grid Example page&lt;/a> embeds a static component with the Bootstrap grids defined. This allows a user to see how the Boostrap grid works inside AEM&amp;#39;s responsive grid. The &lt;a href=&quot;/content/simple/plus/bootstrap/carousel-example.html&quot;>Carousel Example&lt;/a> provides a simple AEM implementation of Bootstrap&amp;#39;s carousel component. Users can populate the content of the slides and adjust a couple settings.&amp;nbsp;&lt;/p>&#xa;"
+                    textIsRich="true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            width="10"/>
+                    </cq:responsive>
+                </text_1776779756>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+    <grid-example/>
+    <carousel-example/>
+</jcr:root>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Carousel"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <carousel
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                margin="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <MainHeading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/heading"
+                                level="{Long}3"
+                                text="Main"/>
+                            <autoplay
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                checked="true"
+                                fieldDescription="Auto Play Carousel slides on page load"
+                                name="./autoPlay"
+                                text="Auto Play"
+                                uncheckedValue="false"
+                                value="true"/>
+                            <playSpeed
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                fieldDescription="Amount of time in milliseconds to cycle through slides"
+                                fieldLabel="Play Speed"
+                                max="10000"
+                                min="-1"
+                                name="./playSpeed"
+                                step="1"
+                                value="5000"/>
+                            <citems
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <multi
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldDescription="Define the different slides"
+                                        fieldLabel="Slides"
+                                        renderReadOnly="{Boolean}true">
+                                        <field
+                                            granite:class="cmp-options--editor-item-multifield-composite-item coral-Well"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            name="./carouselitems">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <option
+                                                    granite:class="cmp-options--editor-item-multifield-composite-item-container"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <headline
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldLabel="Headline"
+                                                            name="headline"/>
+                                                        <path
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldLabel="Background Image"
+                                                            name="image"
+                                                            rootPath="/content/dam"/>
+                                                        <ctapath
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldLabel="CTA Link"
+                                                            name="ctapath"
+                                                            rootPath="/content"/>
+                                                        <ctalabel
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Call to action button label"
+                                                            fieldLabel="CTA Label"
+                                                            name="ctalabel"/>
+                                                        <description
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                            fieldDescription="A snippet of text to display beneath the heading of the carousel"
+                                                            fieldLabel="Description"
+                                                            name="description"/>
+                                                    </items>
+                                                </option>
+                                            </items>
+                                        </field>
+                                    </multi>
+                                </items>
+                            </citems>
+                        </items>
+                    </columns>
+                </items>
+            </carousel>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <wcm jcr:primaryType="nt:unstructured">
+        <foundation jcr:primaryType="nt:unstructured">
+            <components jcr:primaryType="nt:unstructured">
+                <responsivegrid jcr:primaryType="nt:unstructured">
+                    <simple-structure
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Simple Structure"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/libs/wcm/foundation/components/responsivegrid,group:Simple.Structure]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </simple-structure>
+                    <simple-content
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Simple Content"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/libs/wcm/foundation/components/responsivegrid,group:Simple.Content]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </simple-content>
+                    <policy_1502830021815
+                        jcr:lastModified="{Date}2017-08-15T16:47:38.383-04:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Simple Plus Bootstrap Content"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/libs/wcm/foundation/components/responsivegrid,group:Simple - Plus - Bootstrap,group:Simple.Content]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1502830021815>
+                </responsivegrid>
+            </components>
+        </foundation>
+    </wcm>
+    <simple jcr:primaryType="nt:unstructured">
+        <components jcr:primaryType="nt:unstructured">
+            <structure jcr:primaryType="nt:unstructured">
+                <page jcr:primaryType="nt:unstructured">
+                    <policy_1502830072288
+                        jcr:lastModified="{Date}2017-08-16T10:21:53.007-04:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Simple - Plus - Bootstrap "
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        clientlibs="simple.plus.bootstrap.base">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1502830072288>
+                </page>
+            </structure>
+        </components>
+    </simple>
+</jcr:root>

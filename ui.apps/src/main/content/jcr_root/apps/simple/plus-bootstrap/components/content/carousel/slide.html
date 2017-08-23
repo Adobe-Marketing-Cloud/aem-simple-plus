@@ -1,0 +1,14 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Implementation of Carousel Slide
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+  
+<template data-sly-template.slide="${@ carouselItem, index}">
+          <img class="${index}-slide img-responsive center-block" src="${carouselItem.image}" alt="${index} slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>${carouselItem.headline}</h1>
+              <p>${carouselItem.description}</p>
+              <p><a class="btn btn-lg btn-primary" href="${carouselItem.ctaPath @ extension='html'}" role="button">${carouselItem.ctaLabel}</a></p>
+            </div>
+          </div>
+</template>

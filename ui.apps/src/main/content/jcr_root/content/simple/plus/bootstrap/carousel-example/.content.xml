@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2017-08-23T14:07:05.951-04:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/simple/plus-bootstrap/settings/wcm/templates/content-page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Carousel Example"
+        sling:resourceType="simple/components/structure/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <text
+                    jcr:created="{Date}2017-08-23T14:06:10.858-04:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-08-23T14:07:05.949-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="simple/components/core/v1/text"
+                    text="&lt;p>&lt;b>How to Use&lt;/b>&lt;/p>&#xa;&lt;ol style=&quot;list-style-position: inside;&quot;>&#xa;&lt;li>Edit the below carousel by clicking the wrench icon&lt;/li>&#xa;&lt;li>Update the carousel content or settings to see how a bootstrap component could be extended into an AEM authorable component&lt;/li>&#xa;&lt;/ol>&#xa;"
+                    textIsRich="true"/>
+                <carousel
+                    jcr:created="{Date}2017-08-16T10:22:22.962-04:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2017-08-23T12:25:47.031-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="simple/plus-bootstrap/components/content/carousel"
+                    autoPlay="true"
+                    playSpeed="5000">
+                    <carouselitems jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            ctalabel="Learn more"
+                            ctapath="http://www.google.com"
+                            description="Ok this is a fantastic description of my carousel!"
+                            headline="#1 Example headlines"
+                            image="/content/dam/simple/images/blue.png"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            ctalabel="Sign up today"
+                            ctapath="/content/simple/plus"
+                            description="Super awesome carousel here!"
+                            headline="#2 Another example headline"
+                            image="/content/dam/simple/images/green.png"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            ctalabel="Browse gallery"
+                            ctapath="/content/simple/en"
+                            description="Love that Carousellll"
+                            headline="#3 One more for good measure"
+                            image="/content/dam/simple/images/orange.png"/>
+                    </carouselitems>
+                </carousel>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>
