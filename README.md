@@ -1,5 +1,9 @@
 # Simple Plus projects
 
+To learn more about available [Simple Plus projects view the documentation index page](https://helpx.adobe.com/experience-manager/kt/sites/index/simple.html).
+
+**REMEMBER** each Plus project is on its own git branch (`plus/<plus-project>`). The Master git branch is only used as a basis for creating NEW Simple Plus projects.
+
 This a content package project generated using the AEM Multimodule Lazybones template.
 
 ## Building
